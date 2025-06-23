@@ -2,6 +2,16 @@ body {
     width: 900px;
     margin: 6rem auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 1;
+    animation: opacity 1s;
+}
+
+body div {
+    max-width: 900px;
+    max-height: 8rem;
+    animation: width-height 1s;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 h1 {
@@ -31,5 +41,18 @@ span {
 @keyframes gap {
     from {
         gap: 0;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes width-height {
+    from {
+        max-width: 0;
+        max-height: 0;
     }
 }
