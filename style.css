@@ -1,0 +1,35 @@
+body {
+    width: 900px;
+    margin: 6rem auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    display: flex;
+    gap: 1rem;
+    animation: 1s gap;
+}
+
+span {
+    display: inline-block;
+    max-width: 7rem;
+    overflow: hidden;
+    animation: width 1s ease-in-out;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+@keyframes width {
+    from {
+        max-width: 1rem;
+    }
+}
+
+@keyframes gap {
+    from {
+        gap: 0;
+    }
+}
