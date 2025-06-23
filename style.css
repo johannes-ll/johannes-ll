@@ -16,15 +16,25 @@ body div {
 
 h1 {
     display: flex;
-    gap: 1rem;
-    animation: 1s gap;
+    gap: 0rem;
+    animation: 1s gap forwards;
+    animation-delay: 1200ms;
 }
 
 span {
     display: inline-block;
-    max-width: 7rem;
     overflow: hidden;
-    animation: width 1s ease-in-out;
+    max-width: .5rem;
+    animation: width 1s ease-in-out forwards;
+    animation-delay: 1200ms;
+}
+
+#com {
+    opacity: 1;
+    color: rgb(153, 0, 0);
+    animation: to-opacity 1200ms forwards;
+    animation-delay: 1200ms;
+    overflow: visible;
 }
 
 .links {
@@ -33,19 +43,25 @@ span {
 }
 
 @keyframes width {
-    from {
-        max-width: 1rem;
+    to {
+        max-width: 7rem;
     }
 }
 
 @keyframes gap {
-    from {
-        gap: 0;
+    to {
+        gap: 1rem;
     }
 }
 
 @keyframes opacity {
     from {
+        opacity: 0;
+    }
+}
+
+@keyframes to-opacity {
+    to {
         opacity: 0;
     }
 }
