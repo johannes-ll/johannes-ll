@@ -1,2 +1,2 @@
 ## Hello
-Working on some personal projects that will appear soon. Alwauys looking to add on to my portfolio.
+Working on some personal projects that will appear soon. Always looking to add on to my portfolio.
