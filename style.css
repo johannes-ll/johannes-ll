@@ -72,3 +72,16 @@ span {
         max-height: 0;
     }
 }
+
+@media only screen and (max-width: 900px) {
+    body,
+    body div {
+        white-space: wrap;
+        max-height: fit-content;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: large;
+    }
+}
